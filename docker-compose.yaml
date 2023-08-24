@@ -1,0 +1,12 @@
+version: '3'
+services:
+
+  hello-world-service:
+    build:
+      context:
+        .
+    container_name: hello-world-service
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8080:8080"
