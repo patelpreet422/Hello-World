@@ -1,6 +1,7 @@
 server:
   port: 9999
-  # The format used for the keystore. It could be set to JKS in case it is a JKS file
+  # generate using keytool -genkeypair -alias baeldung -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore baeldung.p12 -validity 3650
+  # move baeldung.p12 to resources/keystore
   ssl:
     enabled: true
     key-store-type: PKCS12
