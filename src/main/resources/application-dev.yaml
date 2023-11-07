@@ -1,0 +1,19 @@
+server:
+  port: 9999
+  # The format used for the keystore. It could be set to JKS in case it is a JKS file
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:keystore/baeldung.p12
+    key-store-password: password
+    key-alias: baeldung
+
+logging:
+  level:
+    org.springframework: trace
+
+spring:
+  output:
+    ansi:
+      enabled: always
+
